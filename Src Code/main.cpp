@@ -2,7 +2,8 @@
 #include "checkinet.h"
 
 int main() {
-	CheckInternet();
+	SetConsoleTitleA((LPCSTR)"Check Internet");
+	CheckInternet((LPCSTR)"https://www.google.com/");
 	Sleep(5000);
 	return 0;
 }
